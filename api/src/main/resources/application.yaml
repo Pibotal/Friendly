@@ -1,6 +1,11 @@
 spring:
   profiles:
     active: local
+
+---
+
+spring:
+  profiles: local
 server:
   port: 8080
 
@@ -8,8 +13,12 @@ server:
 
 spring:
   profiles: dev
+server:
+  port: 8080
 
 ---
 
 spring:
   profiles: product
+server:
+  port: 8080
